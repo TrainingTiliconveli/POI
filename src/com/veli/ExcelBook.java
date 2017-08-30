@@ -14,6 +14,7 @@ import org.apache.poi.xssf.usermodel.*;
 //import org.apache.poi.xssf.usermodel.XSSFRow;
 //import org.apache.poi.xssf.usermodel.XSSFSheet;
 //import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+//Example program for accessing excel file with selenium
 public class ExcelBook 
 {
    public static void main(String[] args) throws Exception 
@@ -56,7 +57,7 @@ public class ExcelBook
       }
       //Write the workbook in file system
       FileOutputStream out = new FileOutputStream( 
-      new File("Writesheet.xlsx"));
+      new File("Writesheet1.xlsx"));
       workbook.write(out);
       FileInputStream fis = new FileInputStream(
     	      new File("WriteSheet.xlsx"));
